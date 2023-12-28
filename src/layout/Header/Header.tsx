@@ -22,7 +22,7 @@ const Header = () => {
                         />
                     </ul>
                     <div className={`${s.header__box} ${s.header__second}`}>
-                        <h1><NavLink to='/'>cocktail bar</NavLink></h1>
+                        <h1><NavLink to='/'>Arpa bar</NavLink></h1>
                     </div>
                     <ul className={`${s.header__box} ${s.header__third}`}>
                         <List
