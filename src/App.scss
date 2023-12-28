@@ -1,0 +1,124 @@
+$main-primary: #D27487;
+$main-focus: #ff1493;
+
+html {
+    /* 62.5% of 16px browser font size is 10px */
+    font-size: 62.5%;
+}
+
+
+
+body {
+    font-family: 'Gilroy-400', sans-serif;
+    font-size: 2.5rem;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+ul,
+p,
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+section {
+    padding: 150px 0 0 0;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold-800';
+    src: url('./assets/fonts/Gilroy-Extrabold.eot');
+    src: local('Gilroy Extrabold'), local('Gilroy-Extrabold'),
+        url('./assets/fonts/Gilroy-Extrabold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Gilroy-Extrabold.woff2') format('woff2'),
+        url('./assets/fonts/Gilroy-Extrabold.woff') format('woff'),
+        url('./assets/fonts/Gilroy-Extrabold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold-700';
+    src: url('./assets/fonts/Gilroy-Bold.eot');
+    src: local('Gilroy Bold'), local('Gilroy-Bold'),
+        url('./assets/fonts/Gilroy-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Gilroy-Bold.woff2') format('woff2'),
+        url('./assets/fonts/Gilroy-Bold.woff') format('woff'),
+        url('./assets/fonts/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-600';
+    src: url('./assets/fonts/Gilroy-Semibold.eot');
+    src: local('Gilroy Semibold'), local('Gilroy-Semibold'),
+        url('./assets/fonts/Gilroy-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Gilroy-Semibold.woff2') format('woff2'),
+        url('./assets/fonts/Gilroy-Semibold.woff') format('woff'),
+        url('./assets/fonts/Gilroy-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-500';
+    src: url('./assets/fonts/Gilroy-Medium.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('./assets/fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Gilroy-Medium.woff2') format('woff2'),
+        url('./assets/fonts/Gilroy-Medium.woff') format('woff'),
+        url('./assets/fonts/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy-400';
+    src: url('./assets/fonts/Gilroy-Regular.eot');
+    src: local('Gilroy Medium'), local('Gilroy-Medium'),
+        url('./assets/fonts/Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./assets/fonts/Gilroy-Regular.woff2') format('woff2'),
+        url('./assets/fonts/Gilroy-Regular.woff') format('woff'),
+        url('./assets/fonts/Gilroy-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.cocktailButton {
+    appearance: none;
+    padding: 8px 16px;
+    border: 2px solid $main-primary;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 0 0 30px 0;
+    outline: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+        border-color: $main-focus;
+    }
+
+    &:focus {
+        border-color: $main-focus;
+    }
+
+    &:active {
+        background-color: $main-primary;
+        color: #fff;
+    }
+}

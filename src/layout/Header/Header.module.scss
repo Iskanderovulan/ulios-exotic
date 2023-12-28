@@ -1,0 +1,59 @@
+%align-center {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+@mixin flex($gapRem) {
+    @extend %align-center;
+    column-gap: $gapRem;
+}
+
+.header {
+    padding: 3rem 0;
+    background: #4A2B33;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+    &__nav {
+        @extend %align-center
+    }
+
+    &__box {
+        width: 33.3333%;
+    }
+
+    &__first {
+        @include flex(2rem);
+    }
+
+    &__second {
+        @extend %align-center;
+
+        a {
+            color: coral;
+
+            &:hover {
+                color: coral;
+                opacity: 0.8;
+                transition: 0.3s ease;
+            }
+        }
+    }
+
+    &__third {
+        @include flex(1.5rem);
+
+        svg {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+}
+
+h1 {
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+}

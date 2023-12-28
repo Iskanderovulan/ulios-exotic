@@ -1,0 +1,35 @@
+.searchHistory {
+    max-height: 300px;
+    overflow-y: auto;
+    width: 50%;
+    margin: 2rem 0 0 0
+}
+
+.searchItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #f4f4f4;
+    font-size: 1rem;
+    line-height: 1.5;
+    opacity: 0.6;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.searchValue {
+    margin: 0;
+    font-weight: bold;
+}
+
+.searchDelete {
+    cursor: no-drop;
+    color: red;
+    font-weight: bold;
+}

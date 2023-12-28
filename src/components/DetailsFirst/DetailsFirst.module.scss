@@ -1,0 +1,9 @@
+.detailsFirst {
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        border-radius: 50% 20% 50% 20%/20% 50% 20% 50%;
+        object-fit: cover;
+    }
+}

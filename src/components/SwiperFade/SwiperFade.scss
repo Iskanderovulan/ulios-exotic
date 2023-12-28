@@ -1,0 +1,33 @@
+@import '../../App.scss';
+
+.detailsSwiper {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+    .swiper-slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #ff69b4;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #ff69b4;
+    }
+}

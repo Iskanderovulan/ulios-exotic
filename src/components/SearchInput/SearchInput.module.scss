@@ -1,0 +1,25 @@
+@import '../../App.scss';
+
+.form {
+    display: flex;
+    gap: 30px;
+}
+
+.cocktailInput {
+    appearance: none;
+    width: 60%;
+    padding: 8px 16px;
+    border: 2px solid $main-primary;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    font-size: 3rem;
+    cursor: text;
+    margin: 0 0 30px 0;
+    outline: none;
+    transition: border-color 0.3s ease;
+
+    &:focus {
+        border-color: $main-focus;
+    }
+}

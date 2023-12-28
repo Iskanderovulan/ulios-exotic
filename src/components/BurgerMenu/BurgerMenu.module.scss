@@ -1,0 +1,49 @@
+.burgerMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1;
+
+    span {
+        width: 2rem;
+        height: 0.25rem;
+        background-color: #fff;
+        transition: all 0.3s linear;
+        position: relative;
+        transform-origin: 1px;
+
+        &:nth-child(1) {
+            transform: translateY(10px);
+        }
+
+        &:nth-child(2) {
+            opacity: 1;
+        }
+
+        &:nth-child(3) {
+            transform: translateY(-10px);
+        }
+    }
+
+    &.open {
+        span {
+            &:nth-child(1) {
+                transform: rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+}
